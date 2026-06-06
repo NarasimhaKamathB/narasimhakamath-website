@@ -1,16 +1,37 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="px-6 py-24 max-w-6xl mx-auto">
       <div className="divider" />
 
-      <div className="grid md:grid-cols-2 gap-16 items-start">
-        {/* Left — bio */}
+      {/* Photo + name block */}
+      <div className="flex flex-col sm:flex-row items-center sm:items-end gap-8 mb-16">
+        <div className="relative w-40 h-40 sm:w-52 sm:h-52 shrink-0">
+          {/* Subtle background shape behind photo */}
+          <div className="absolute inset-0 rounded-2xl bg-chip translate-x-2 translate-y-2" />
+          <div className="relative w-full h-full rounded-2xl overflow-hidden border border-rule shadow-sm">
+            <Image
+              src="/photo.png"
+              alt="Dr. Narasimha Kamath"
+              fill
+              className="object-cover object-top"
+              priority
+            />
+          </div>
+        </div>
         <div>
-          <p className="section-label mb-6">About</p>
-          <h2 className="text-3xl md:text-4xl font-light text-ink leading-snug mb-8">
+          <p className="section-label mb-2">About</p>
+          <h2 className="text-3xl md:text-4xl font-light text-ink leading-snug">
             Executive. Researcher.<br />
             <span className="text-navy">Builder.</span>
           </h2>
+        </div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-16 items-start">
+        {/* Left — bio */}
+        <div>
           <div className="space-y-4 text-stone leading-relaxed text-[15px]">
             <p>
               Dr. Narasimha Kamath is a globally recognised technology executive
