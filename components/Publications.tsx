@@ -7,7 +7,7 @@ const books = [
     title: "Handbook of Research on Strategic Supply Chain Management in the Retail Industry",
     venue: "IGI Global",
     note: "Co-editor with Swapnil Saurav · ISBN: 978-1-4666-9894-9",
-    link: null,
+    link: "https://www.igi-global.com/book/handbook-research-strategic-supply-chain/140976",
   },
 ];
 
