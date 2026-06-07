@@ -67,14 +67,17 @@ export default function Contact() {
       </div>
 
       {/* Footer */}
-      <div className="mt-20 pt-8 border-t border-rule flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-        <p className="text-xs text-stone">
+      <a
+        href="#top"
+        className="mt-20 pt-8 border-t border-rule flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 group cursor-pointer"
+      >
+        <p className="text-xs text-stone group-hover:text-navy transition-colors">
           © 2026 Dr. Narasimha Kamath · Bengaluru, India
         </p>
-        <p className="text-xs text-stone">
+        <p className="text-xs text-stone group-hover:text-navy transition-colors">
           EVP R&D & Global CISO · o9 Solutions · NarasimhaKamath.org
         </p>
-      </div>
+      </a>
     </section>
   );
 }
