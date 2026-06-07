@@ -28,7 +28,7 @@ export default function Nav() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#top" className="text-sm font-medium text-ink tracking-wide">
-          NK<span className="text-navy">.</span>ai
+          NK
         </a>
 
         {/* Desktop nav */}

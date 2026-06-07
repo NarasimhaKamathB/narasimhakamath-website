@@ -72,7 +72,7 @@ export default function Contact() {
           © 2026 Dr. Narasimha Kamath · Bengaluru, India
         </p>
         <p className="text-xs text-stone">
-          EVP R&D & Global CISO · o9 Solutions · NarasimhaKamath.ai
+          EVP R&D & Global CISO · o9 Solutions · NarasimhaKamath.org
         </p>
       </div>
     </section>
