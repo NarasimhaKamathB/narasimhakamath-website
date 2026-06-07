@@ -1,5 +1,6 @@
 const course = {
   title: "Data Driven Supply Chain Transformation",
+  link: "https://iimmumbai.ac.in/data-driven-supply-chain-transformation-2023",
   desc: "A globally delivered online course co-created with two of the world's leading supply chain researchers.",
   collaborators: [
     { name: "Prof. David Simchi-Levi", inst: "MIT" },
@@ -46,7 +47,14 @@ export default function Speaking() {
           <div>
             <p className="section-label mb-4">Signature Course</p>
             <div className="border border-rule rounded-lg p-6">
-              <h3 className="text-base font-medium text-ink mb-2">{course.title}</h3>
+              <a
+                href={course.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base font-medium text-ink hover:text-navy transition-colors link-underline mb-2 inline-block"
+              >
+                {course.title}
+              </a>
               <p className="text-sm text-stone mb-4 leading-relaxed">{course.desc}</p>
               <div className="space-y-2 mb-4">
                 {course.collaborators.map((c) => (
