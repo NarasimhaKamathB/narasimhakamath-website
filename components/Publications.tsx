@@ -62,7 +62,7 @@ const chapters = [
 const conferences = [
   { year: 2024, title: "Revolutionizing Sales Forecasting in Quick-Service Restaurants using Hybrid Deep Learning Models", venue: "ICIEA, IIT Kharagpur" },
   { year: 2014, title: "Proposing Best Value Supply Chain for Perishable Goods in Indian Market", venue: "4th Biennial SCM Conference, IIM Bangalore" },
-  { year: 2009, title: "Integrated Cost Model for Deteriorating Items in a Multi-echelon supply chain", venue: "AIMS-7, IIM Bangalore · IBA Best Paper Award", award: true },
+  { year: 2009, title: "Integrated Cost Model for Deteriorating Items in a Multi-echelon supply chain", venue: "AIMS-7, IIM Bangalore · IBA Best Paper Award", award: true, link: "https://www.aims-international.org/aims7/Contributed%20Papers.pdf" },
   { year: 2005, title: "Supply Chain Structure Design for a Short Lifecycle Product: A Loop Dominance Based Analysis", venue: "HICSS-38, Hawaii, USA" },
   { year: 2004, title: "A Rough Neuro Data Mining Approach for Network Intrusion Detection", venue: "IWDC 2004, Kolkata" },
 ];
