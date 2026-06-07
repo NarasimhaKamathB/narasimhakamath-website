@@ -22,7 +22,7 @@ const journals = [
     year: 2008,
     title: "A hybrid model for network security systems: Integrating intrusion detection system with survivability",
     venue: "International Journal of Network Security, 7(2): 249–260",
-    link: null,
+    link: "http://ijns.jalaxy.com.tw/contents/ijns-v7-n2/ijns-2008-v7-n2-p249-260.pdf",
   },
   {
     year: 2007,
