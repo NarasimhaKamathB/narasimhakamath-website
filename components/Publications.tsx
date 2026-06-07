@@ -49,7 +49,7 @@ const chapters = [
     year: 2026,
     title: "Revolutionizing Sales Forecasting in Quick-Service Restaurants using Hybrid Deep Learning Models",
     venue: "Operations Research and Data Analytics: Current Trends and Future Perspectives, Springer",
-    link: "https://doi.org/10.1007/978-981-96-8327-7_5",
+    link: "https://link.springer.com/chapter/10.1007/978-981-96-8327-7_5",
   },
   {
     year: 2020,
