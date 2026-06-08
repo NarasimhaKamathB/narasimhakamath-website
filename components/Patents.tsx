@@ -1,19 +1,19 @@
 const patents = [
-  { year: 2025, no: "US 12,506,669 B2", title: "Read-Write Network Visualization", assignee: "o9 Solutions" },
-  { year: 2025, no: "US 12,462,205 B2", title: "Dynamic Memoryless Demand-Supply Pegging", assignee: "o9 Solutions" },
-  { year: 2024, no: "US 12,086,185 B2", title: "Aggregated Physical and Logical Network Mesh View", assignee: "o9 Solutions" },
-  { year: 2023, no: "US 11,853,940 B1", title: "System and Method of Root Cause Analysis of Objective Violations", assignee: "o9 Solutions" },
-  { year: 2023, no: "US 11,809,495 B2", title: "Aggregated Physical and Logical Network Mesh View", assignee: "o9 Solutions" },
-  { year: 2023, no: "US 11,792,094 B2", title: "Read-Write Network Visualization", assignee: "o9 Solutions" },
-  { year: 2023, no: "US 11,755,993 B2", title: "System and Method of Root Cause Analysis of Objective Violations and Query Analysis", assignee: "o9 Solutions" },
-  { year: 2023, no: "US 11,615,357 B2", title: "Dynamic Memoryless Demand-Supply Pegging", assignee: "o9 Solutions" },
-  { year: 2022, no: "US 11,416,809 B2", title: "System and Method of Root Cause Analysis of Objective Violations and Query Analysis", assignee: "o9 Solutions" },
-  { year: 2019, no: "US 10,325,237 B2", title: "System and Method for Solving Large Scale Supply Chain Planning Problems with Integer Constraints", assignee: "o9 / JDA" },
-  { year: 2018, no: "US 10,068,192 B2", title: "System and Method of Solving Supply Chain Campaign Planning Problems Involving Major and Minor Setups", assignee: "JDA Software" },
-  { year: 2017, no: "US 9,785,900 B2", title: "System and Method of Solving Supply Chain Campaign Planning Problems Involving Major and Minor Setups", assignee: "JDA Software" },
-  { year: 2017, no: "US 9,754,232 B2", title: "System and Method for Solving Large Scale Supply Chain Planning Problems with Integer Constraints", assignee: "JDA Software" },
-  { year: 2015, no: "US 8,965,548 B1", title: "System and Method of Solving Supply Chain Campaign Planning Problems Involving Major and Minor Setups", assignee: "JDA Software" },
-  { year: 2013, no: "US 8,429,035 B1", title: "System and Method of Solving Large Scale Supply Chain Planning Problems with Integer Constraints", assignee: "JDA Software" },
+  { year: 2025, no: "US 12,506,669 B2", title: "Read-Write Network Visualization", assignee: "o9 Solutions", link: "https://patents.google.com/patent/US12506669B2" },
+  { year: 2025, no: "US 12,462,205 B2", title: "Dynamic Memoryless Demand-Supply Pegging", assignee: "o9 Solutions", link: "https://patents.google.com/patent/US12462205B2" },
+  { year: 2024, no: "US 12,086,185 B2", title: "Aggregated Physical and Logical Network Mesh View", assignee: "o9 Solutions", link: "https://patents.google.com/patent/US12086185B2" },
+  { year: 2023, no: "US 11,853,940 B1", title: "System and Method of Root Cause Analysis of Objective Violations", assignee: "o9 Solutions", link: "https://patents.google.com/patent/US11853940B1" },
+  { year: 2023, no: "US 11,809,495 B2", title: "Aggregated Physical and Logical Network Mesh View", assignee: "o9 Solutions", link: "https://patents.google.com/patent/US11809495B2" },
+  { year: 2023, no: "US 11,792,094 B2", title: "Read-Write Network Visualization", assignee: "o9 Solutions", link: "https://patents.google.com/patent/US11792094B2" },
+  { year: 2023, no: "US 11,755,993 B2", title: "System and Method of Root Cause Analysis of Objective Violations and Query Analysis", assignee: "o9 Solutions", link: "https://patents.google.com/patent/US11755993B2" },
+  { year: 2023, no: "US 11,615,357 B2", title: "Dynamic Memoryless Demand-Supply Pegging", assignee: "o9 Solutions", link: "https://patents.google.com/patent/US11615357B2" },
+  { year: 2022, no: "US 11,416,809 B2", title: "System and Method of Root Cause Analysis of Objective Violations and Query Analysis", assignee: "o9 Solutions", link: "https://patents.google.com/patent/US11416809B2" },
+  { year: 2019, no: "US 10,325,237 B2", title: "System and Method for Solving Large Scale Supply Chain Planning Problems with Integer Constraints", assignee: "o9 / JDA", link: "https://patents.google.com/patent/US10325237B2" },
+  { year: 2018, no: "US 10,068,192 B2", title: "System and Method of Solving Supply Chain Campaign Planning Problems Involving Major and Minor Setups", assignee: "JDA Software", link: "https://patents.google.com/patent/US10068192B2" },
+  { year: 2017, no: "US 9,785,900 B2", title: "System and Method of Solving Supply Chain Campaign Planning Problems Involving Major and Minor Setups", assignee: "JDA Software", link: "https://patents.google.com/patent/US9785900B2" },
+  { year: 2017, no: "US 9,754,232 B2", title: "System and Method for Solving Large Scale Supply Chain Planning Problems with Integer Constraints", assignee: "JDA Software", link: "https://patents.google.com/patent/US9754232B2" },
+  { year: 2015, no: "US 8,965,548 B1", title: "System and Method of Solving Supply Chain Campaign Planning Problems Involving Major and Minor Setups", assignee: "JDA Software", link: "https://patents.google.com/patent/US8965548B1" },
+  { year: 2013, no: "US 8,429,035 B1", title: "System and Method of Solving Large Scale Supply Chain Planning Problems with Integer Constraints", assignee: "JDA Software", link: "https://patents.google.com/patent/US8429035B1" },
 ];
 
 const pending = [
@@ -53,7 +53,14 @@ export default function Patents() {
           >
             <span className="text-xs font-medium text-stone pt-0.5">{p.year}</span>
             <div>
-              <p className="text-sm font-medium text-ink leading-snug">{p.title}</p>
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-ink hover:text-navy transition-colors link-underline leading-snug"
+              >
+                {p.title}
+              </a>
               <p className="text-xs text-stone mt-0.5">{p.no}</p>
             </div>
             <span className="text-xs text-stone whitespace-nowrap hidden sm:block">{p.assignee}</span>
