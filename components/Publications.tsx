@@ -57,23 +57,73 @@ const chapters = [
     venue: "Supply Chain and Logistics Management, IGI Global",
     link: "https://doi.org/10.4018/978-1-7998-0945-6.ch015",
   },
+  {
+    year: 2009,
+    title: "Switz Foods Private Limited",
+    venue: "Entrepreneurship Development, Tata McGraw-Hill · ISBN: 978-0-07-024887-8",
+    note: "With Munish Thakur, Rahul Roy and Subir Bhattacharya · Ed: K Ramachandran, ISB Dean",
+    link: "http://www.tatamcgrawhill.com/html/9780070248878.html",
+  },
+  {
+    year: 2008,
+    title: "Intrusion Detection using Modern Techniques: Integration of Genetic Algorithms and Rough Sets with Neural Nets",
+    venue: "Intelligent Information Technologies: Concepts, Methodologies, Tools, and Applications (Vol. 1, Sec. I, Ch. 1.12), Information Science Reference · ISBN: 978-1-59904-941-0",
+    note: "With Tarun Bhaskar · Ed: Vijayan Sugumaran, Oakland University",
+    link: null,
+  },
+  {
+    year: 2006,
+    title: "Intrusion Detection using Modern Techniques: Integration of Genetic Algorithms and Rough Sets with Neural Nets",
+    venue: "Artificial Neural Networks in Real-Life Applications, Idea Group Inc. · ISBN: 1-59140-904-7",
+    note: "With Tarun Bhaskar · Eds: Juan R. Rabuñal & Julián Dorado",
+    link: "http://www.igi-pub.com/books/details.asp?id=5375",
+  },
+];
+
+const teachingNotes = [
+  {
+    year: 2004,
+    title: "Extended Teaching note for the case titled \"Logistics and Capacity Planning at SKB Healthcare\"",
+    venue: "Decision, Vol. 31 (1), pp.178-192",
+    link: null,
+  },
+];
+
+const cases = [
+  {
+    year: 2007,
+    title: "Switz Foods Calcutta: Surviving Perishability",
+    venue: "European Case Clearing House, 907-016-1",
+    note: "With Munish Thakur, Rahul Roy and Subir Bhattacharya",
+    link: null,
+  },
 ];
 
 const conferences = [
   { year: 2024, title: "Revolutionizing Sales Forecasting in Quick-Service Restaurants using Hybrid Deep Learning Models", venue: "ICIEA, IIT Kharagpur" },
   { year: 2014, title: "Proposing Best Value Supply Chain for Perishable Goods in Indian Market", venue: "4th Biennial SCM Conference, IIM Bangalore" },
+  { year: 2012, title: "Cradle to Grave – Profitable Supply Chains", venue: "3rd Biennial Supply Chain Management Conference, IIM Bangalore, Dec 14-15, 2012" },
+  { year: 2012, title: "Supply Chain Management of a Perishable Item: An experimental analysis", venue: "International Conference on Best Practices in Supply Chain Management (BPSCM 2012), Bhubaneswar, Nov 22-23, 2012" },
+  { year: 2011, title: "Cake Game: Comprehending Perishability", venue: "15th International Conference of Society of Operations Management (SOM 2011), IIM Calcutta, Dec 16-18, 2011", note: "With Rahul Roy" },
+  { year: 2011, title: "Optimal operating points in a coordinated supply chain of perishable item", venue: "CiSE 2011, Wuhan, China, Dec 9-11, 2011 · IEEE ISBN: 978-1-4244-6448-7", note: "With Subir Bhattacharya" },
   { year: 2009, title: "Integrated Cost Model for Deteriorating Items in a Multi-echelon supply chain", venue: "AIMS-7, IIM Bangalore · IBA Best Paper Award", award: true, link: "https://www.aims-international.org/aims7/Contributed%20Papers.pdf" },
+  { year: 2009, title: "Planning in Tough Times: i2 Supply Chain Planner Overview", venue: "AIMS-7, IIM Bangalore, Dec 20-23, 2009", note: "With Tushar Shekhar" },
   { year: 2005, title: "Supply Chain Structure Design for a Short Lifecycle Product: A Loop Dominance Based Analysis", venue: "HICSS-38, Hawaii, USA" },
+  { year: 2005, title: "A system dynamics framework for analysis of ordering policies: Application to supply chain management in perishable goods industry", venue: "Conference on System Dynamics (CSD 2005), Tezpur, India, Nov 4-5, 2005", note: "With Rahul Roy" },
   { year: 2004, title: "A Rough Neuro Data Mining Approach for Network Intrusion Detection", venue: "IWDC 2004, Kolkata" },
+  { year: 2004, title: "Channel Capacity Management in Service Oriented Supply Chain", venue: "5th International Conference on Operations and Quantitative Management (ICOQM-V), Seoul, S. Korea, Oct 25-27, 2004" },
+  { year: 2004, title: "A Model for Lead-time Analysis of a Multi-product, Two-echelon Supply Chain System", venue: "9th International Symposium on Logistics (9th ISL), IIM Bangalore, Jul 11-14, 2004", note: "With Subir Bhattacharya" },
 ];
 
-type TabKey = "journals" | "books" | "chapters" | "conferences";
+type TabKey = "journals" | "books" | "chapters" | "conferences" | "cases" | "teachingNotes";
 
 const tabs: { key: TabKey; label: string }[] = [
   { key: "journals", label: "Journal Articles" },
   { key: "books", label: "Books" },
   { key: "chapters", label: "Book Chapters" },
   { key: "conferences", label: "Conference Papers" },
+  { key: "cases", label: "Cases" },
+  { key: "teachingNotes", label: "Teaching Notes" },
 ];
 
 export default function Publications() {
@@ -84,6 +134,8 @@ export default function Publications() {
     books,
     chapters,
     conferences,
+    cases,
+    teachingNotes,
   };
 
   return (
