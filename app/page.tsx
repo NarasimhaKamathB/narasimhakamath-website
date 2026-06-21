@@ -5,6 +5,7 @@ import Pillars from "@/components/Pillars";
 import Patents from "@/components/Patents";
 import Publications from "@/components/Publications";
 import Speaking from "@/components/Speaking";
+import SimulationGames from "@/components/SimulationGames";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Patents />
       <Publications />
       <Speaking />
+      <SimulationGames />
       <Contact />
     </main>
   );
