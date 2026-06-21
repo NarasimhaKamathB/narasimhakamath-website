@@ -3,8 +3,6 @@ const games = [
     title: "Cake Game",
     desc: "An interactive simulation game for comprehending perishability in supply chains. Players experience the dynamics of ordering, spoilage, and demand uncertainty first-hand.",
     link: "https://cake-game-6o4q.vercel.app/",
-    year: 2011,
-    venue: "Presented at SOM 2011, IIM Calcutta",
   },
 ];
 
@@ -20,12 +18,8 @@ export default function SimulationGames() {
       <div className="grid md:grid-cols-2 gap-6">
         {games.map((g) => (
           <div key={g.title} className="border border-rule rounded-lg p-6 flex flex-col gap-4">
-            <div className="flex items-start justify-between gap-4">
-              <h3 className="text-base font-medium text-ink">{g.title}</h3>
-              <span className="text-xs text-stone shrink-0">{g.year}</span>
-            </div>
+            <h3 className="text-base font-medium text-ink">{g.title}</h3>
             <p className="text-sm text-stone leading-relaxed">{g.desc}</p>
-            <p className="text-xs text-stone/70">{g.venue}</p>
             <a
               href={g.link}
               target="_blank"
