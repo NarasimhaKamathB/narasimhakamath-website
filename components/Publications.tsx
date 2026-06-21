@@ -80,6 +80,15 @@ const chapters = [
   },
 ];
 
+const simulationGames = [
+  {
+    year: 2011,
+    title: "Cake Game",
+    venue: "An interactive simulation game for comprehending perishability in supply chains",
+    link: "https://cake-game-6o4q.vercel.app/",
+  },
+];
+
 const teachingNotes = [
   {
     year: 2004,
@@ -114,7 +123,7 @@ const conferences = [
   { year: 2004, title: "A Model for Lead-time Analysis of a Multi-product, Two-echelon Supply Chain System", venue: "9th International Symposium on Logistics (9th ISL), IIM Bangalore, Jul 11-14, 2004" },
 ];
 
-type TabKey = "journals" | "books" | "chapters" | "conferences" | "cases" | "teachingNotes";
+type TabKey = "journals" | "books" | "chapters" | "conferences" | "cases" | "teachingNotes" | "simulationGames";
 
 const tabs: { key: TabKey; label: string }[] = [
   { key: "journals", label: "Journal Articles" },
@@ -123,6 +132,7 @@ const tabs: { key: TabKey; label: string }[] = [
   { key: "conferences", label: "Conference Papers" },
   { key: "cases", label: "Cases" },
   { key: "teachingNotes", label: "Teaching Notes" },
+  { key: "simulationGames", label: "Simulation Games" },
 ];
 
 export default function Publications() {
@@ -135,6 +145,7 @@ export default function Publications() {
     conferences,
     cases,
     teachingNotes,
+    simulationGames,
   };
 
   return (
