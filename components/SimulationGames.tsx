@@ -4,6 +4,11 @@ const games = [
     desc: "An interactive simulation game for comprehending perishability in supply chains. Players experience the dynamics of ordering, spoilage, and demand uncertainty first-hand.",
     link: "https://cake-game-6o4q.vercel.app/",
   },
+  {
+    title: "Beer Game",
+    desc: "An interactive simulation of the classic Beer Distribution Game, illustrating the bullwhip effect in multi-echelon supply chains. Players take on roles across the supply chain — retailer, wholesaler, distributor, and manufacturer — to experience how local ordering decisions cascade into system-wide instability.",
+    link: "https://beer-game-blond-one.vercel.app/",
+  },
 ];
 
 export default function SimulationGames() {
